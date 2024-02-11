@@ -1,0 +1,68 @@
+<!-- =========== Winter 2024 EECS 493 Assignment 2 Starter Code =========== -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src='scripts/jquery.min.js'></script>
+    <script src='scripts/page.js'></script>
+</head>
+
+<!-- HTML -->
+
+<body>
+    <div class='outer-container'>
+        <div class='game-window'>
+            <!-- Landing Page -->
+            <div class="landing-page">
+                <header>
+                  <div class="flex-container">
+                    <img src="src/asteroid.png" alt="Left Asteroid">
+                    <h1>Asteroids</h1> 
+                    <img src="src/asteroid.png" alt="Right Asteroid">
+                  </div>
+                </header>
+                <div class="buttons">
+                    <button id="playBtn">Play game!</button>
+                    <button id="settingsBtn">Settings</button>
+                </div>
+            </div>
+            <!-- Settings Panel -->
+            <!-- Add your Settings Panel content here -->
+            <div class="settings-panel" id="settings-panel">
+              <h2 class="settings-headers">Settings</h2>
+              <h3 class="settings-headers" id="volumeValue">Volume: 50</h3>
+              <div class="volume-control"> <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider"> </div>
+              <div class="difficulty-control">
+                <h3 class="settings-headers">Difficulty</h3>
+                <button class="difficulty-button" id="easyBtn">Easy</button>
+                <button class="difficulty-button" id="normalBtn">Normal</button>
+                <button class="difficulty-button" id="hardBtn">Hard</button>
+              </div>
+              <button id="closeBtn">Close</button>
+            </div>
+            <!-- Tutorials Page -->
+            <!-- Add your Tutorials Page content here -->
+            <div class="tutorial-page">
+              <h1 class="tutorial-title">How to play</h1>
+              <p><strong>Avoid</strong> <em>asteroids!</em></p>
+              <img src="src/asteroid.png" alt="Asteroids">
+              <p><strong>Collect</strong> <em>shields!</em> <strong>Travel</strong> <em>through portals to the next level!</em></p>
+              <img src="src/shield.gif" alt="Shields">
+              <img src="src/port.gif" alt="Portals">
+              <p><strong>Gain</strong> <em>as many points as possible</em></p>
+              <button class="tutorial-start-button" id="startBtn">Start</button>
+            </div>
+        </div> <!-- end game-window -->
+    </div> <!-- end outer-container -->
+    <script src='scripts/page.js'></script>
+</body>
+
+</html>
+
+

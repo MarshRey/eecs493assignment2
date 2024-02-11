@@ -1,0 +1,170 @@
+/* ============ Winter 2024 EECS 493 Assignment 2 Starter Code ============ */
+
+/* Main Containers */
+body, button {
+  font-family: VT323;
+}
+button {
+  font-size: xx-large;
+}
+
+.outer-container {
+  height: 720px;
+  width: 1280px;
+  background: #eee;
+  border: 5px solid gainsboro;
+}
+
+.game-window {
+  height: 720px;
+  width: 1280px;
+  float: left;
+  position: relative;
+}
+
+/* Add your stylings here */
+
+.landing-page {
+  /* background images is frontpage_background.png in the src local directory */
+  background-image: url("../src/frontpage_background.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;  align-items: center;
+}
+
+header {
+  height: 100px; 
+  width: 100%;
+  background-color: darkslateblue;
+  border-bottom: 6px groove;
+  color: white;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+}
+
+header img { /* for astroid images */
+  height: 100px; 
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+  height: 100vh;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  background-color: darkslateblue;
+  color: white;
+  margin-bottom: 20px; /* Adjust as needed */
+  font-size: 18px; /* Adjust as needed */
+}
+
+.tutorial-start-button {
+  width: 200px;
+  height: 75px;
+  background-color: gainsboro;
+  color: black;
+  font-size: 50px;
+}
+
+.settings-panel {
+  width: 600px;
+  height: 690px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none; 
+  background-color: darkslateblue;
+  margin: 20px;
+  border: 6px groove; 
+}
+
+.settings-panel h2,
+.settings-panel h3 {
+  font-weight: bold;
+}
+
+.volume-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  transition: opacity .2s;
+  opacity: 0.7;
+}
+
+.difficulty-button {
+  width: 180px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  border: 2px solid purple;
+}
+
+.difficulty-button.selected {
+  border-color: yellow;
+}
+
+#closeBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.settings-headers {
+  /* bold */
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+}
+
+.tutorial-page {
+  height: 100vh;
+  display: none;
+  flex-direction: column;  
+  align-items: center;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.tutorial-page img {
+  height: 100px;
+}
+
+.tutorial-page h1 {
+  font-size: 75px;
+}
+
+.tutorial-page p {
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
